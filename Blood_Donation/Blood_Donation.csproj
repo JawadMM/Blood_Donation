@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5BE1FA4-DCC7-4A12-A03E-EED57E25CD03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blood_Donation</RootNamespace>
+    <AssemblyName>Blood_Donation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApproveDonorRecipUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveDonorRecipUpdate.Designer.cs">
+      <DependentUpon>ApproveDonorRecipUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blood_DonationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blood_DonationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmApproveResUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmApproveResUpdate.Designer.cs">
+      <DependentUpon>frmApproveResUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprroveDOnationOrReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprroveDOnationOrReceiving.Designer.cs">
+      <DependentUpon>frmAprroveDOnationOrReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodDonation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodDonation.Designer.cs">
+      <DependentUpon>frmBloodDonation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodDonationDrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodDonationDrive.Designer.cs">
+      <DependentUpon>frmBloodDonationDrive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodDriveDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodDriveDetails.Designer.cs">
+      <DependentUpon>frmBloodDriveDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodTypeWIseCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodTypeWIseCount.Designer.cs">
+      <DependentUpon>frmBloodTypeWIseCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBloodUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloodUnit.Designer.cs">
+      <DependentUpon>frmBloodUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmPayment.Designer.cs">
+      <DependentUpon>frmConfirmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDonorManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDonorManagement.Designer.cs">
+      <DependentUpon>frmDonorManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomePage.Designer.cs">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentSummery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentSummery.Designer.cs">
+      <DependentUpon>frmPaymentSummery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecipientManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecipientManagement.Designer.cs">
+      <DependentUpon>frmRecipientManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSendEmail.Designer.cs">
+      <DependentUpon>frmSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserManagement.Designer.cs">
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApproveDonorRecipUpdate.resx">
+      <DependentUpon>ApproveDonorRecipUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmApproveResUpdate.resx">
+      <DependentUpon>frmApproveResUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprroveDOnationOrReceiving.resx">
+      <DependentUpon>frmAprroveDOnationOrReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodDonation.resx">
+      <DependentUpon>frmBloodDonation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodDonationDrive.resx">
+      <DependentUpon>frmBloodDonationDrive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodDriveDetails.resx">
+      <DependentUpon>frmBloodDriveDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodTypeWIseCount.resx">
+      <DependentUpon>frmBloodTypeWIseCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBloodUnit.resx">
+      <DependentUpon>frmBloodUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmPayment.resx">
+      <DependentUpon>frmConfirmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDonorManagement.resx">
+      <DependentUpon>frmDonorManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomePage.resx">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentSummery.resx">
+      <DependentUpon>frmPaymentSummery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecipientManagement.resx">
+      <DependentUpon>frmRecipientManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSendEmail.resx">
+      <DependentUpon>frmSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManagement.resx">
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Blood_DonationDataSet.xsc">
+      <DependentUpon>Blood_DonationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Blood_DonationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Blood_DonationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Blood_DonationDataSet.xss">
+      <DependentUpon>Blood_DonationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
